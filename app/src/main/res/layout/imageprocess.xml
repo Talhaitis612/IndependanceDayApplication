@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/AddRelativeLayout"
+        android:orientation="vertical"
+        android:weightSum="8.0">
+
+        <RelativeLayout
+            android:id="@+id/rlImage4Save"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="7.3">
+
+            <augustdp.picmaker.photoframe.myapplication.dragabble.DraggableImageView
+                android:id="@+id/dragimageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ivReceivedImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="false"
+                android:gravity="center"
+                android:scaleType="center"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/ivflags"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="2.0dip"
+                android:background="@drawable/f_11" />
+
+            <augustdp.picmaker.photoframe.myapplication.HorizontalListView
+                android:id="@+id/myhlvfalgs"
+                android:layout_width="match_parent"
+                android:layout_height="80.0dip"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/footer"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="0.7"
+            android:background="@drawable/footer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4.0">
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/ivfrmes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/stickers_btn" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/ivfacesticker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/facesticker_btn" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/ivdelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/clear_btn" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0">
+
+                    <ImageView
+                        android:id="@+id/ivSaveImg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/save_btn" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/AddRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/adLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>
